@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {   
     public float horizontalInput;
-    public float speed = 10.0f;
+    public float speed = 15.0f;
 
     public GameObject projectilePrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,13 +18,13 @@ public class PlayerControl : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector3.right * Time.deltaTime * speed * horizontalInput);
 
-        if (transform.position.x < -18)
+        if (transform.position.x < -21)
         {
-            transform.position = new Vector3(-18, transform.position.y, transform.position.z);//izquierda de la pantalla
+            transform.position = new Vector3(-21, transform.position.y, transform.position.z);//izquierda de la pantalla
         }
-         if (transform.position.x > 18)
+         if (transform.position.x > 21)
         {
-            transform.position = new Vector3(18, transform.position.y, transform.position.z);//derecha de la pantalla
+            transform.position = new Vector3(21, transform.position.y, transform.position.z);//derecha de la pantalla
         }
 
         //Acciones del jugador

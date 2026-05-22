@@ -2034,6 +2034,8 @@ GameObject:
   - component: {fileID: 8330864175864585871}
   - component: {fileID: 1019699168844003126}
   - component: {fileID: 5568047053301166320}
+  - component: {fileID: -4110343603821634529}
+  - component: {fileID: 5566522646185314493}
   m_Layer: 0
   m_Name: Dog_GermanShepherd_01
   m_TagString: Untagged
@@ -2127,7 +2129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9061dcb27a880046b06880d79b23593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  speed: 8
+  speed: 6
 --- !u!114 &5568047053301166320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2140,6 +2142,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c2191be54dfff44490937a953b015c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOut
+--- !u!65 &-4110343603821634529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3190758500326037447}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1408001, y: 0.24846612, z: 0.31062385}
+  m_Center: {x: 0.0024953843, y: 0.09395428, z: 0.023678733}
+--- !u!114 &5566522646185314493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3190758500326037447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e872c7f6d2bc04543b011ed1b15e7154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CheckColliders
 --- !u!1 &3348870219014530452
 GameObject:
   m_ObjectHideFlags: 0
